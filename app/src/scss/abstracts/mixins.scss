@@ -1,0 +1,18 @@
+@mixin flex($jc, $al, $fd) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $al;
+  flex-direction: $fd;
+}
+
+@mixin largeScreen() {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin position($ps, $tp, $lf) {
+  position: $ps;
+  top: $tp;
+  left: $lf;
+}
